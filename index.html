@@ -17,22 +17,30 @@
     padding: 0;
     font-family: 'Kaushan Script', cursive;
 }
+#gh{
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+#st{
+    font-size:85px;
+}
 #hi{
     box-shadow: 20px 20px solid brown;
 }
 #banner{
     
-    background: linear-gradient(rgba(0,0,0,0.5),#963200);
+    background: url('BG.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
 .logo{
-    width:400px;
+    width:700px;
+    height:400px;
     padding:2px 2px;
     position: absolute;
-    top:4%;
-    left:10%;
+    top:2%;
+    left:-2%;
 }
 .banner-text{
     text-align: center;
@@ -280,16 +288,19 @@ background: #efefef;
     font-size: 50px;
 }
 .feature-box{
-    width:80%;
+    width:900px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
     box-shadow: 2px 2px solid black;
+    width:900px;
+
 }
 .feature-box{
     width:80%;
+    
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -300,6 +311,9 @@ background: #efefef;
 {
     flex-basis:50%;;
 }
+#jk{
+    width:400px;
+}
 .features h1{
     font-size: 45px;
     text-align: left;
@@ -308,14 +322,21 @@ background: #efefef;
     color:#009688;
     box-shadow: #963200;
 }
+#fr{
+    width:600px;
+    height:800px;
+}
+
 
 .features-img{
     flex-basis: 50%;
     margin:auto;
+    width:700px;
+    
     
 }
 .features-img:hover{
-    width:600px;
+    width:700px;
     border-radius: 15px;
     height:400px;
     box-shadow: 40px 40px solid brown;
@@ -365,6 +386,50 @@ background: #efefef;
    line-height: 45px;
    border: 3px solid #963200;
      }
+
+     #slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	width: 20%;
+	float: left;
+}
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
      @media screen and (max-width:770px) {
         .single-service{
             flex-basis: 100%;
@@ -408,7 +473,7 @@ background: #efefef;
     margin-bottom: 30px;
     border-radius: 10px;
     background-color:linear-gradient(rgba(0,0,0,0.5),#963200);
-    box-shadow: 0 10px 20px 3px #963200;
+    box-shadow: 0 10px 20px 3px #2a2a29;
     cursor: pointer;
     transition: transform(0.5s);
 }
@@ -588,17 +653,20 @@ font-size: 25px;
 </head>
 <body>
     <section id="banner">
-        <img src="Untitled_design-removebg-preview (1).png" class="logo">
-        <img src="NAVANA_logo-removebg-preview.png" class="logo">
+        <img src="BG (1).png" class="logo">
 
         <div class = "banner-text">
             <h1>NAVANA</h1>
-            <p>DESIGN YOUR FUTURE.....</p>
+            <p id="gh">DESIGN YOUR FUTURE.....<br><br><br></p>
+            <h2 id="st">ONE STOP SOLUTION FOR STARTUPS.</h2>
 
         
         <div class="banner-btn">
              <a href="#"><span></span>Find out</a>
             <a href="#"><span></span>Read More</a>
+            <br>
+            <br>
+            <a href ="https://forms.gle/BjHNangiXCgvGara9" id="jk"><span></span>CLICK HERE TO GIVE QUIZ</a>
 
         </div>
     </div>
@@ -609,30 +677,15 @@ font-size: 25px;
             <h1>WHAT WE DO</h1>
             
         </div>
-        <div class ="feature-box">
-
-            <div class="features-img">
+        <div id="slider">
+            <figure>
                 <img src="temp 4.png">
-                
-
-            </div>
-
-            <div class="features-img">
                 <img src="template.png">
-                
-
-            </div>
-            <div class="features-img">
                 <img src="temp21.png">
-                
-
-            </div>
-            <div class="features-img">
                 <img src="temp 5.png">
-        
-
-            </div>
+            </figure>
         </div>
+        
             </section>
             
             
@@ -665,11 +718,35 @@ font-size: 25px;
                 
         
                     </div>
+                    <div class="features-img" #id="hi">
+                        <img src="Copy of Black and Whie Geometric Content Creator Business Card (1).png">
+                
+        
+                    </div>
+                    <div class="features-img" #id="hi">
+                        <img src="Copy of Black and Whie Geometric Content Creator Business Card (2) (1).png">
+                
+        
+                    </div>
               
                
                 </div>
             </div>
              </section>
+             <div id="slider">
+                <figure>
+                    <img src="1.png" id="fr">
+                    <img src="2.png" id="fr">
+                    <img src="3.png" id="fr">
+                    <img src="4.png" id="fr">
+                    <img src="5.png" id="fr">
+
+                </figure>
+            </div>
+
+
+            
+        
 
 
 
@@ -824,8 +901,11 @@ font-size: 25px;
         x.parentNode.insertBefore(s, x);
       }
     }
+ 
+
         
     </script>
+    
 
     
 </body>
